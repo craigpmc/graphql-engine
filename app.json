@@ -1,0 +1,25 @@
+{
+  "name": "graphql-engine",
+  "scripts": {
+  },
+  "env": {
+    "HEROKU_POSTGRESQL_PURPLE_URL": {
+      "required": true
+    },
+    "HOSTEDGRAPHITE_APIKEY": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "hostedgraphite",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+
+  ]
+}
